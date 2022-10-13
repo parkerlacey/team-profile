@@ -7,11 +7,13 @@ const generateManager = function (manager) {
                 <h3>${manager.name}</h3>
                 <h4>Manager</h4><i class="material-icons">content_paste</i>
             </div>
+
             <div class="card-body">
                 <p class="id">ID: ${manager.id}</p>
                 <p class="email">Email: <a href="mailto:${manager.email}">${manager.email}</a></p>
                 <p class="office">Office Number: ${manager.officeNumber}</p>
             </div>
+
         </div>
     </div>
     `;
@@ -26,11 +28,13 @@ const generateEngineer = function (engineer) {
                 <h3>${engineer.name}</h3>
                 <h4>Engineer</h4><i class="material-icons">laptop_mac</i>
             </div>
+
             <div class="card-body">
                 <p class="id">ID: ${engineer.id}</p>
                 <p class="email">Email: <a href="mailto:${engineer.email}">${engineer.email}</a></p>
                 <p class="github">Github: <a href="https://github.com/${engineer.github}">${engineer.github}</a></p>
             </div>
+
         </div>
     </div>
     `
@@ -45,6 +49,7 @@ const generateIntern = function (intern) {
                 <h3>${intern.name}</h3>
                 <h4>Intern</h4><i class="material-icons">assignment_ind</i>
             </div>
+
             <div class="card-body">
                 <p class="id">ID: ${intern.id}</p>
                 <p class="email">Email:<a href="mailto:${intern.email}">${intern.email}</a></p>
@@ -133,8 +138,10 @@ const generateTeamPage = function (employeeCards) {
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </html>
+
+
 `;
 }
 
 // export to index
-module.exports = template; 
+module.exports = generateHTML; 
